@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E38D2E476C1D373645C15B59 /* libPods-JJTSettingTableView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF5C5B8360E1F72B218416E3 /* libPods-JJTSettingTableView.a */; };
 		E5AFE1002383DD86000A5969 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E5AFE0FF2383DD86000A5969 /* AppDelegate.m */; };
 		E5AFE1032383DD86000A5969 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5AFE1022383DD86000A5969 /* ViewController.m */; };
 		E5AFE1062383DD86000A5969 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5AFE1042383DD86000A5969 /* Main.storyboard */; };
@@ -35,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1FA2AA6FC9977AAC534F52E8 /* Pods-JJTSettingTableView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JJTSettingTableView.release.xcconfig"; path = "Target Support Files/Pods-JJTSettingTableView/Pods-JJTSettingTableView.release.xcconfig"; sourceTree = "<group>"; };
+		66D65B93005A3DB4BD921D70 /* Pods-JJTSettingTableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JJTSettingTableView.debug.xcconfig"; path = "Target Support Files/Pods-JJTSettingTableView/Pods-JJTSettingTableView.debug.xcconfig"; sourceTree = "<group>"; };
+		BF5C5B8360E1F72B218416E3 /* libPods-JJTSettingTableView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JJTSettingTableView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5AFE0FB2383DD86000A5969 /* JJTSettingTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JJTSettingTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5AFE0FE2383DD86000A5969 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E5AFE0FF2383DD86000A5969 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E38D2E476C1D373645C15B59 /* libPods-JJTSettingTableView.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8104487AA111FB2E1FF1DAFF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				66D65B93005A3DB4BD921D70 /* Pods-JJTSettingTableView.debug.xcconfig */,
+				1FA2AA6FC9977AAC534F52E8 /* Pods-JJTSettingTableView.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		89D20EE6E075C89C1B7E1290 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF5C5B8360E1F72B218416E3 /* libPods-JJTSettingTableView.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E5AFE0F22383DD86000A5969 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +108,8 @@
 				E5AFE1162383DD87000A5969 /* JJTSettingTableViewTests */,
 				E5AFE1212383DD87000A5969 /* JJTSettingTableViewUITests */,
 				E5AFE0FC2383DD86000A5969 /* Products */,
+				8104487AA111FB2E1FF1DAFF /* Pods */,
+				89D20EE6E075C89C1B7E1290 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,6 +164,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E5AFE1272383DD87000A5969 /* Build configuration list for PBXNativeTarget "JJTSettingTableView" */;
 			buildPhases = (
+				117B4ABD78F745542AAB5AFC /* [CP] Check Pods Manifest.lock */,
 				E5AFE0F72383DD86000A5969 /* Sources */,
 				E5AFE0F82383DD86000A5969 /* Frameworks */,
 				E5AFE0F92383DD86000A5969 /* Resources */,
@@ -256,6 +282,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		117B4ABD78F745542AAB5AFC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JJTSettingTableView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E5AFE0F72383DD86000A5969 /* Sources */ = {
@@ -433,6 +484,7 @@
 		};
 		E5AFE1282383DD87000A5969 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66D65B93005A3DB4BD921D70 /* Pods-JJTSettingTableView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -449,6 +501,7 @@
 		};
 		E5AFE1292383DD87000A5969 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FA2AA6FC9977AAC534F52E8 /* Pods-JJTSettingTableView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
