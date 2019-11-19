@@ -2,10 +2,10 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "JJTSettingTableView"
-  spec.version      = "0.0.3"
-  spec.summary      = "A short description of JJTSettingTableView."
+  spec.version      = "0.0.5"
+  spec.summary      = "JJTSettingTableView ok."
   spec.description  = <<-DESC
-  JJTSettingTableView
+  JJTSettingTableView is ok
                    DESC
 
   spec.homepage     = "https://github.com/jiangjiatao/JJTSettingTableView"
@@ -20,8 +20,8 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => "https://github.com/jiangjiatao/JJTSettingTableView.git", :tag => "#{spec.version}" }
 
 
-  spec.source_files  = "Classes", "Classes/**/*.{h,m}"
-  spec.exclude_files = "Classes/Exclude"
+  spec.source_files  = "JJTSettingTableView", "JJTSettingTableView/**/*.{h,m}"
+  spec.exclude_files = "JJTSettingTableView/Exclude"
 
 
 end
